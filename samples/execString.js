@@ -1,4 +1,4 @@
-var applescript = require("../lib/node-applescript");
+var applescript = require("../lib/applescript");
 
 // Very basic AppleScript command. Returns the song name of each
 // currently selected track in iTunes as an 'Array' of 'String's.

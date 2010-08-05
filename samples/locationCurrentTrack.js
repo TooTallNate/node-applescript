@@ -1,4 +1,4 @@
-var applescript = require("../lib/node-applescript");
+var applescript = require("../lib/applescript");
 
 var file = require("path").join(__dirname, "locationCurrentTrack.applescript");
 
