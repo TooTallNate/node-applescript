@@ -4,17 +4,18 @@ var applescript = require("../lib/applescript");
 // currently selected track in iTunes as an 'Array' of 'String's.
 var script = 'tell application "iTunes" to get name of selection';
 
-applescript.execString(script, function(rtnCode, stdout, stderr) {
-  if (rtnCode) {
+applescript.execString(script, function(err, rtn) {
+  if (err) {
     // Something went wrong!
+    throw err;
   }
 
-  if (Array.isArray(stdout)) {
-    console.log("Currently selected tracks:");
-    stdout.forEach(function(songName) {
+  if (Array.isArray(rtn)) {
+    console.log("Currently selected tracks in \"iTunes\":");
+    rtn.forEach(function(songName) {
       console.log("\t" + songName);
     });
   } else {
-    console.log("No tracks are selected...")
+    console.log("No tracks are selected in \"iTunes\"...")
   }
 });

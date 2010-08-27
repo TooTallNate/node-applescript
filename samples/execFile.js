@@ -12,15 +12,15 @@ if (process.argv.length <= 2) {
   });
 } else {
   console.error('Executing "' + process.argv[2] + '"');
-  applescript.execFile(process.argv[2], process.argv.slice(3), function(rtnCode, stdout, stderr) {
+  applescript.execFile(process.argv[2], process.argv.slice(3), function(err, rtn) {
     console.error('    DONE!\n');
-    if (rtnCode) {
+    if (err) {
       // Something went wrong!
-      console.error("EXIT CODE: " + rtnCode);
-      console.error(stderr);
+      console.error("EXIT CODE: " + err.exitCode);
+      console.error(err);
     } else {
       // If we got here, then there's probably some worthy content.
-      console.error(stdout);
+      console.error(rtn);
     }
   });  
 }
