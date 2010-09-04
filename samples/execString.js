@@ -10,7 +10,7 @@ applescript.execString(script, function(err, rtn) {
     throw err;
   }
 
-  if (Array.isArray(rtn)) {
+  if (Array.isArray(rtn) && rtn.length > 0) {
     console.log("Currently selected tracks in \"iTunes\":");
     rtn.forEach(function(songName) {
       console.log("\t" + songName);
