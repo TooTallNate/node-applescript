@@ -2,7 +2,7 @@ node-applescript
 ================
 
 A high-level way to execute AppleScript code through NodeJS, and retrieve
-the result as a native JavaScript object (when possible). In reality, this
+the result as a native JavaScript object. In reality, this
 module is just a simple wrapper around the OS X `osascript` command.
 
 ### Why?
@@ -51,4 +51,3 @@ Licence
 -------
 
 The `node-applescript` module is licensed under the MIT license, of course!
-
