@@ -2,7 +2,7 @@ node-applescript
 ================
 
 A high-level way to execute AppleScript code through NodeJS, and retrieve
-the result as a native JavaScript object. In reality, this
+the result as a native JavaScript object. Underneath the hood, this
 module is just a simple wrapper around the OS X `osascript` command.
 
 ### Why?
