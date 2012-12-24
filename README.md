@@ -26,7 +26,7 @@ Usage
 The `node-applescript` module provides `execString` and `execFile` functions
 to easily execute AppleScript commands and buffer the output into a calback.
 
-    var applescript = require("node-applescript");
+    var applescript = require("applescript");
     
     // Very basic AppleScript command. Returns the song name of each
     // currently selected track in iTunes as an 'Array' of 'String's.
