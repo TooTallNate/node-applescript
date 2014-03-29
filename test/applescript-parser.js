@@ -8,6 +8,10 @@ describe("AppleScript Parser", function () {
     assert.strictEqual("Hello", parse("\"Hello\""));
   });
 
+  it("supports multi line text", function () {
+    assert.strictEqual("Hello\nWorld", parse("\"Hello\nWorld\""));
+  });
+
   it("supports integer", function () {
     assert.strictEqual(123, parse("123"));
   });
