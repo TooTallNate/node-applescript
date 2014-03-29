@@ -34,4 +34,15 @@ describe("Applescript", function () {
       });
   });
 
+  it("supports raw format", function (done) {
+    applescript.execString([
+      "script Joe", 
+      "property theCount : 0",
+      "end script",
+      "set scriptObjectJoe to Joe",
+      "scriptObjectJoe"].join("\n"), function (err, result) {
+        assert.deepEqual({_raw: 'script Joe'}, result);
+        done();
+      })
+  });
 });

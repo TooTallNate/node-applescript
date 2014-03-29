@@ -92,4 +92,8 @@ describe("AppleScript Parser", function () {
     );
   });
 
+  it("supports results in raw format", function () {
+    assert.deepEqual({_raw: 'script Joe'}, parse("\xABscript Joe\xBB"));
+  });
+
 });
