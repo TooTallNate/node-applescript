@@ -3,8 +3,22 @@
   "description": "Easily execute arbitrary AppleScript code on OS X through NodeJS.",
   "version": "0.2.1",
   "author": "Nathan Rajlich <nathan@tootallnate.net>",
-  "keywords": ["applescript", "mac", "osx"],
+  "keywords": [
+    "applescript",
+    "mac",
+    "osx"
+  ],
   "main": "./lib/applescript",
   "lib": "./lib",
-  "engines": { "node": ">= 0.2.0" }
+  "engines": {
+    "node": ">= 0.2.0"
+  },
+  "scripts": {
+    "pretest": "pegjs lib/applescript-parser.pegjs",
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "pegjs": "~0.8.0"
+  }
 }
