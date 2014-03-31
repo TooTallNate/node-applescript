@@ -96,4 +96,8 @@ describe("AppleScript Parser", function () {
     assert.deepEqual({_raw: 'script Joe'}, parse("\xABscript Joe\xBB"));
   });
 
+  it('return null if the input is empty', function () {
+    assert.strictEqual(null, parse(''));
+  });
+
 });
