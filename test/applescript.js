@@ -45,4 +45,12 @@ describe("Applescript", function () {
         done();
       })
   });
+
+  it("doesn't parese output on error", function (done) {
+    applescript.execString("kfdhks", function (err, result, errout) {
+      assert(typeof result === "undefined");
+      assert(err);
+      done();
+    });
+  })
 });
