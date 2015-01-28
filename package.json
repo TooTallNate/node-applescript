@@ -3,8 +3,10 @@
   "description": "Easily execute arbitrary AppleScript code on OS X through NodeJS.",
   "version": "0.2.1",
   "author": "Nathan Rajlich <nathan@tootallnate.net>",
-  "keywords": ["applescript", "mac", "osx"],
-  "main": "./lib/applescript",
-  "lib": "./lib",
-  "engines": { "node": ">= 0.2.0" }
+  "keywords": [
+    "applescript",
+    "mac",
+    "osx"
+  ],
+  "main": "./lib/applescript"
 }
