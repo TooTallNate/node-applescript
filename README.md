@@ -19,7 +19,7 @@ $ npm install applescript
 Requirements
 ------------
 
- * Mac (or Hackintosh) running [macOS](https://www.apple.com/macos) (tested with Snow Leopard)
+ * Mac (or Hackintosh) running [macOS](https://www.apple.com/macos) (tested with High Sierra)
  * [NodeJS](https://nodejs.org) (v0.2.0 or newer)
 
 Usage
