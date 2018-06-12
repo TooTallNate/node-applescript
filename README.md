@@ -3,11 +3,11 @@ node-applescript
 
 A high-level way to execute AppleScript code through NodeJS, and retrieve
 the result as a native JavaScript object. Underneath the hood, this
-module is just a simple wrapper around the OS X `osascript` command.
+module is just a simple wrapper around the macOS `osascript` command.
 
 ### Why?
 AppleScripts are the only way to communicate and interact with certain
-external OS X processes, for example [iTunes](http://www.itunes.com).
+external macOS processes, for example [iTunes](http://www.itunes.com).
 
 Easy Install
 ------------
@@ -19,7 +19,7 @@ $ npm install applescript
 Requirements
 ------------
 
- * Mac (or Hackintosh) running [OS X](http://www.apple.com/macosx) (tested with Snow Leopard)
+ * Mac (or Hackintosh) running [macOS](https://www.apple.com/macos) (tested with Snow Leopard)
  * [NodeJS](http://nodejs.org) (v0.2.0 or newer)
 
 Usage

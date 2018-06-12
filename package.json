@@ -1,6 +1,6 @@
 {
   "name": "applescript",
-  "description": "Easily execute arbitrary AppleScript code on OS X through NodeJS.",
+  "description": "Easily execute arbitrary AppleScript code on macOS through NodeJS.",
   "version": "1.0.0",
   "author": "Nathan Rajlich <nathan@tootallnate.net>",
   "repository": "TooTallNate/node-applescript",
