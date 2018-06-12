@@ -20,7 +20,7 @@ Requirements
 ------------
 
  * Mac (or Hackintosh) running [macOS](https://www.apple.com/macos) (tested with Snow Leopard)
- * [NodeJS](http://nodejs.org) (v0.2.0 or newer)
+ * [NodeJS](https://nodejs.org) (v0.2.0 or newer)
 
 Usage
 -----
