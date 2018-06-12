@@ -29,20 +29,20 @@ The `node-applescript` module provides `execString` and `execFile` functions
 to easily execute AppleScript commands and buffer the output into a calback.
 
 ``` js
-var applescript = require('applescript');
+const applescript = require('applescript');
 
 // Very basic AppleScript command. Returns the song name of each
 // currently selected track in iTunes as an 'Array' of 'String's.
-var script = 'tell application "iTunes" to get name of selection';
+const script = 'tell application "iTunes" to get name of selection';
 
-applescript.execString(script, function(err, rtn) {
+applescript.execString(script, (err, rtn) => {
   if (err) {
     // Something went wrong!
   }
   if (Array.isArray(rtn)) {
-    rtn.forEach(function(songName) {
+    for (const songName of rtn) {
       console.log(songName);
-    });
+    }
   }
 });
 ```
