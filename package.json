@@ -6,6 +6,8 @@
   "repository": "TooTallNate/node-applescript",
   "keywords": [
     "applescript",
+    "osascript",
+    "macos",
     "mac",
     "osx"
   ],
