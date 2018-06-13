@@ -1,7 +1,7 @@
 node-applescript
 ================
 
-A high-level way to execute AppleScript code through NodeJS, and retrieve
+A high-level way to execute AppleScript code through Node.js, and retrieve
 the result as a native JavaScript object. Underneath the hood, this
 module is just a simple wrapper around the macOS `osascript` command.
 
@@ -20,7 +20,7 @@ Requirements
 ------------
 
  * Mac (or Hackintosh) running [macOS](https://www.apple.com/macos) (tested with High Sierra)
- * [NodeJS](https://nodejs.org) (v0.2.0 or newer)
+ * [Node.js](https://nodejs.org) (v0.2.0 or newer)
 
 Usage
 -----
