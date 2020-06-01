@@ -51,6 +51,9 @@ applescript.execString(script, (err, rtn) => {
 (`*.applescript`) file as the first argument instead of the command itself, and you
 may pass an optional Array of String arguments to send to the applescript file.
 
+Each function takes an optional last parameter timeout (in milliseconds) to kill the
+applescript process if it stops responding.
+
 Licence
 -------
 
